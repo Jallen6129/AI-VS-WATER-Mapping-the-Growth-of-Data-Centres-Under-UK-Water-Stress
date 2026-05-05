@@ -8,6 +8,7 @@ As the UK data centre sector expands under increasing AI demand, siting decision
 <img width="597" height="801" alt="image" src="https://github.com/user-attachments/assets/a7f76b32-3892-4e7d-9577-b7678453cf3f" />
 
 # **Repository Structure**
+```
 ArcGIS Maps/
 ├── F4.1 Population Map.pdf                    # LAD population distribution map
 ├── F4.2 Advanced Population Map.pdf           # Weighted population coverage map
@@ -51,6 +52,8 @@ Results/
 ├── dc_optimisation_results_2050.xlsx         # 2050 full Pareto solution set
 ├── dc_optimisation_results_2075.xlsx         # 2075 full Pareto solution set
 └── dc_optimisation_results_2100.xlsx         # 2100 full Pareto solution set
+```
+
 # **Optimisation Model**
 The model applies an epsilon-constraint method to solve a bi-objective facility location problem, treating population coverage as the primary objective and water stress as an epsilon-constrained secondary objective. Implemented in Python using PuLP (CBC solver) with 100 epsilon steps across a Pareto frontier. Three reference solutions (Options A, B, C) are extracted representing low, balanced, and high water-resilience siting strategies. Scenarios are solved independently for 2026, 2050, 2075, and 2100 under UKCP18-aligned climate projections.
 # **Spatial Framework**
