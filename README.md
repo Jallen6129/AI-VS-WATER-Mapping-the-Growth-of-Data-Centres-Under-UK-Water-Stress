@@ -53,7 +53,7 @@ Results/
 ├── dc_optimisation_results_2075.xlsx         # 2075 full Pareto solution set
 └── dc_optimisation_results_2100.xlsx         # 2100 full Pareto solution set
 ```
-# **File guidance**
+# **File Guidance**
 Use the Solve.py Files to generate the parteo_results.json result files. Then use these files in the build_excel.py code to genertae the dc_optimistaion_results.xlsx
 # **Optimisation Model**
 The model applies an epsilon-constraint method to solve a bi-objective facility location problem, treating population coverage as the primary objective and water stress as an epsilon-constrained secondary objective. Implemented in Python using PuLP (CBC solver) with 100 epsilon steps across a Pareto frontier. Three reference solutions (Options A, B, C) are extracted representing low, balanced, and high water-resilience siting strategies. Scenarios are solved independently for 2026, 2050, 2075, and 2100 under UKCP18-aligned climate projections.
